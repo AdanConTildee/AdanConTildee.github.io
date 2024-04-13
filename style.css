@@ -1,0 +1,281 @@
+/* Importar la fuente de Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+
+/* Estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+*::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+  *::-webkit-scrollbar-track {
+    background-color: lightgray;
+  }
+  
+  *::-webkit-scrollbar-track:hover {
+    background-color: gray;
+  }
+  
+  *::-webkit-scrollbar-thumb {
+    background-color: darkred;
+  /*  border: 2px solid whitesmoke; */
+  }
+  
+  *::-webkit-scrollbar-thumb:hover {
+    background-color: brown;
+  }
+  
+  *::-webkit-scrollbar-thumb:active {
+    background-color:rgb(101, 50, 114);
+  }
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #0f0e13; /* Cambio de color de fondo */
+    color: #ffffff; /* Color de texto principal */
+}
+
+/* Estilos del encabezado */
+.header {
+    background-image: url(Imagenes/bg.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    min-height: 80vh;
+    padding: 80px 0;
+}
+
+.menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 200px;
+    height: auto;
+}
+
+.menu .navbar ul li {
+    position: relative;
+    float: left;
+}
+
+.menu .navbar ul li a {
+    font-size: 18px;
+    padding: 20px;
+    color: #ffffff;
+    font-weight: 600;
+    display: block; 
+}
+
+.menu .navbar ul li a:hover {
+    color: #ff5a20;
+}
+
+.menu-icono {
+    width: 25px;
+}
+
+.menu label {
+    cursor: pointer;
+    display: none;
+}
+
+.header-content {
+    display: flex;
+}
+
+.header-txt {
+    flex-basis: 50%;
+}
+
+.header-txt h1 {
+    font-size: 60px;
+    color: #ffffff;
+    line-height: 1.3;
+    margin-bottom: 25px;
+}
+
+.header-txt span {
+    color:  red;
+}
+
+.header-txt p {
+    font-size: 17px;
+    background-color: #0f0e13;
+    color: #e0e0e0;
+    font-weight: bolder;
+    margin-bottom: 45px; /* Ajuste para mejor legibilidad */
+}
+
+.butons {
+    display: flex;
+}
+
+.btn-1,
+.btn-2,
+.btn-3 {
+    display: inline-block;
+    padding: 11px 35px;
+    border: 2px solid #ff5a20;
+    border-radius: 25px;
+    margin-right: 25px;
+    font-size: 17px;
+    color: #ffffff;
+}
+
+.btn-1:hover,
+.btn-2:hover,
+.btn-3:hover {
+    background-color: #ff5a20;
+}
+
+.btn-2 {
+    padding: 11px 25px; /* Ajuste para igualar tamaño de botón con otros botones */
+    margin-right: 0; /* Ajuste para alinear el último botón a la derecha */
+}
+
+/* Estilos de la sección "popular" */
+.popular {
+    padding: 100px 0;
+    text-align: center;
+    
+}
+
+.popular-content {
+    display: flex;
+    justify-content: space-between;
+    overflow: auto;
+    margin: 16px;
+    gap: 20px;
+    
+}
+
+.popular-content img {
+    width: 150px;
+    
+}
+.popular-content img:hover {
+    /* transform: scale(1.5); /
+    / box-shadow: 0px 0px 6px 20px white; */
+    outline: 12px solid rgb(255, 0, 0);
+
+}
+/* Estilos de la sección "productos" */
+.product-content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-inline: 20px;
+}
+
+.product-1 {
+    background-color: #ff5a20;
+}
+
+.product-txt {
+    padding: 50px 30px;
+}
+
+h3 {
+    font-size: 20px;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+.price {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.price p {
+    font-size: 17px;
+    color: #ff5a20;
+}
+
+/* Estilos de la sección "contacto" */
+.contact {
+    padding: 100px 0;
+}
+
+.contact-content {
+    background-color: #2a223a;
+    text-align: center;
+    padding: 50px;
+    border-radius: 50px;
+}
+p#mensaje-confirmacion {
+    transition: opacity 1s ease-out 0s;
+  }
+form {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+input {
+    padding: 18px 25px;
+    background-color: #2a223a;
+    border: 0;
+    border-radius: 25px;
+    outline: none;
+    margin-right: 10px;
+    color: #ffffff;
+    font-size: 17px;
+}
+
+::placeholder {
+    color: #e0e0e0;
+    font-size: 17px;
+}
+
+.btn-3 {
+    background-color: #ff5a20;
+    cursor: pointer;
+    margin-right: 0;
+}
+
+/* Estilos del pie de página */
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 0;
+}
+
+.link ul {
+    display: flex;
+}
+
+.link ul li > a {
+    font-size: 17px;
+    color: #ffffff;
+    margin-right: 20px;
+}
+
+.link ul li > a:hover {
+    color: #ff5a20;
+}
+
+.seccion{
+    display: flex;
+    align-items: center;
+    overflow: auto;
+    margin: 16px 12;
+
+}
+.titulo{
+    margin-inline-start: 20px;
+    margin-bottom: 20px;
+}
